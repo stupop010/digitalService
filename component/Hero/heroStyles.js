@@ -1,4 +1,32 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, styled } from "@material-ui/core/styles";
+import { motion } from "framer-motion";
+
+export const MultiColor = styled(motion.div)({
+  background: "linear-gradient(to bottom,#e64741 0%,#e6255d 100%,#7db9e8 100%)",
+  height: "100%",
+  width: "100%",
+});
+
+export const BlackBox = styled(motion.div)({
+  position: "absolute",
+  top: "-10px",
+  right: "-1050px",
+  height: "2000px",
+  width: "2000px",
+  background: "black",
+});
+
+export const ScrollMouseContainer = styled(motion.div)({
+  display: "flex",
+  flexDirection: "column",
+  position: "absolute",
+  bottom: "10%",
+  left: "50%",
+  transform: "translate(-50%)",
+  "&:hover": {
+    cursor: "pointer",
+  },
+});
 
 export const useStyles = makeStyles({
   root: {
@@ -7,26 +35,6 @@ export const useStyles = makeStyles({
     minHeight: "900px",
     height: "100vh",
     overflow: "hidden",
-  },
-  multiColor: {
-    background:
-      "linear-gradient(to bottom,#e64741 0%,#e6255d 100%,#7db9e8 100%)",
-    height: "100%",
-    width: "100%",
-    "& img": {
-      position: "absolute",
-      top: "35%",
-      left: "14%",
-    },
-  },
-  blackBox: {
-    position: "absolute",
-    top: "-10px",
-    right: "-1050px",
-    height: "2000px",
-    width: "2000px",
-    transform: "rotate(120deg)",
-    background: "black",
   },
   overLay: {
     position: "absolute",
