@@ -1,8 +1,7 @@
 import Head from "next/head";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import Box from "@material-ui/core/Box";
 
 import Hero from "../component/Hero";
+import Services from "../component/Services";
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
       {/* Main */}
       <main>
         <Hero />
-        <p>hello</p>
+        <Services />
       </main>
 
       {/* Footer */}
