@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Hero from "../component/Hero";
 import Services from "../component/Services";
+import Work from "../component/Work";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <main>
         <Hero />
         <Services />
+        <Work />
       </main>
 
       {/* Footer */}
