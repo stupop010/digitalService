@@ -3,6 +3,7 @@ import Head from "next/head";
 import Hero from "../component/Hero";
 import Services from "../component/Services";
 import Work from "../component/Work";
+import Blog from "../component/Blog";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Work />
+        <Blog />
       </main>
 
       {/* Footer */}
