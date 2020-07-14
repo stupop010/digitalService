@@ -9,7 +9,7 @@ import { useStyles } from "./footerStyles";
 export default function Footer() {
   const classes = useStyles();
   return (
-    <footer className={classes.root}>
+    <footer className={classes.root} id="contact">
       <div>
         <p>If you have an exciting project, feel free to get in touch.</p>
         <a className={classes.btn}>

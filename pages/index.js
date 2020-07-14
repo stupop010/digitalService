@@ -1,3 +1,4 @@
+import Menu from "../component/Menu";
 import Hero from "../component/Hero";
 import Services from "../component/Services";
 import Work from "../component/Work";
@@ -10,6 +11,7 @@ export default function Home() {
     <div>
       {/* Main */}
       <main>
+        <Menu />
         <Hero />
         <Services />
         <Work />

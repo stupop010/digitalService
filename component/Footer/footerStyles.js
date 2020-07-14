@@ -21,7 +21,6 @@ export const useStyles = makeStyles({
     borderRadius: "6px",
     fontSize: "28px",
     width: "240px",
-
     "& span": {
       display: "inline-block",
       position: "relative",
@@ -45,7 +44,7 @@ export const useStyles = makeStyles({
   },
   fast: {
     position: "absolute",
-    top: "33%",
+    top: "30%",
     right: "-25px",
     opacity: 0,
     transition: ".3s",

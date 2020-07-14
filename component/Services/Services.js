@@ -33,7 +33,7 @@ const data = [
 export default function Services() {
   const classes = useStyles();
   return (
-    <section className={classes.root}>
+    <section className={classes.root} id="digital">
       <Typography variant="h2">Our digital services</Typography>
       <div className={classes.cardContainer}>
         {data.map((d) => (

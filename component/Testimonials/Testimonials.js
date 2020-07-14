@@ -6,7 +6,7 @@ import { useStyles } from "./testimonialsStyles";
 export default function Testimonials() {
   const classes = useStyles();
   return (
-    <section className={classes.section}>
+    <section className={classes.section} id="testimonial">
       <div className={classes.root}>
         <h2>Testimonials</h2>
         <p>

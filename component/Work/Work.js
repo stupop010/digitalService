@@ -3,7 +3,7 @@ import { useStyles } from "./workStyles";
 export default function Work() {
   const classes = useStyles();
   return (
-    <section className={classes.root}>
+    <section className={classes.root} id="work">
       <h2>Our Work</h2>
       <div className={classes.imgContainer}>
         {logos.map((logo, i) => (

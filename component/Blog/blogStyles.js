@@ -92,7 +92,6 @@ export const useStyles = makeStyles({
       margin: 0,
     },
   },
-
   content: {
     position: "relative",
     marginTop: "5px",
@@ -105,6 +104,39 @@ export const useStyles = makeStyles({
       width: "36px",
       border: "1px solid black",
       background: "black",
+    },
+  },
+  btn: {
+    color: "#fff",
+    backgroundColor: "purple",
+    padding: "12px 30px",
+    margin: "1.7rem 0",
+    display: "inline-block",
+    borderRadius: "6px",
+    fontSize: "28px",
+    width: "240px",
+    textAlign: "center",
+    "& span": {
+      display: "inline-block",
+      position: "relative",
+      transition: "0.3s",
+    },
+    "& span svg": {
+      position: "absolute",
+      top: "20%",
+      right: "-30px",
+      opacity: 0,
+      transition: "0.3s",
+    },
+    "&:hover": {
+      cursor: "pointer",
+    },
+    "&:hover span": {
+      paddingRight: "30px",
+    },
+    "&:hover span svg": {
+      right: 0,
+      opacity: 1,
     },
   },
 });

@@ -1,10 +1,12 @@
 import clsx from "clsx";
+import FastForwardIcon from "@material-ui/icons/FastForward";
+
 import { useStyles } from "./blogStyles";
 
 export default function Blog() {
   const classes = useStyles();
   return (
-    <section className={classes.root}>
+    <section className={classes.root} id="blog">
       <h2>Our Blog</h2>
       <p>
         A frequent, chronological publication of personal thoughts and Web
@@ -44,6 +46,11 @@ export default function Blog() {
           </div>
         </div>
       </div>
+      <a className={classes.btn}>
+        <span>
+          Read More <FastForwardIcon />
+        </span>
+      </a>
     </section>
   );
 }
