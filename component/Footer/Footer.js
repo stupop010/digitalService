@@ -12,19 +12,36 @@ export default function Footer() {
     <footer className={classes.root}>
       <div>
         <p>If you have an exciting project, feel free to get in touch.</p>
-        <a>
+        <a className={classes.btn}>
           <span>
-            <EmailIcon /> Email Me <FastForwardIcon className={classes.fast} />
+            <EmailIcon fontSize="large" className={classes.email} /> Email Me
+            <FastForwardIcon className={classes.fast} />
           </span>
         </a>
       </div>
-      <div>
-        <TwitterIcon />
-        <FacebookIcon />
-        <LinkedInIcon />
-        <EmailIcon />
-      </div>
-      <div>copyright</div>
+      <ul className={classes.list}>
+        <li>
+          <a href="https://twitter.com/">
+            <TwitterIcon />
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com">
+            <FacebookIcon />
+          </a>
+        </li>
+        <li>
+          <a href="https://uk.linkedin.com/">
+            <LinkedInIcon />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:agentavery@sample.com">
+            <EmailIcon />
+          </a>
+        </li>
+      </ul>
+      <div className={classes.copyright}>&copy; Copyright 2020 | Stuart</div>
     </footer>
   );
 }
