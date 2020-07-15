@@ -5,6 +5,7 @@ import { useStyles } from "./blogStyles";
 
 export default function Blog() {
   const classes = useStyles();
+
   return (
     <section className={classes.root} id="blog">
       <h2>Our Blog</h2>
@@ -54,12 +55,3 @@ export default function Blog() {
     </section>
   );
 }
-
-let data = [
-  {
-    logo: "/blog-logo.png",
-    title: "Opening New Doors for.",
-    info:
-      "When a group of ambitious designers meet, you know something hot is brewing. Take a closer look and you'll find them murmuring away..",
-  },
-];

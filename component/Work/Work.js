@@ -1,7 +1,8 @@
-import { useStyles } from "./workStyles";
+import { useStyles, useClass } from "./workStyles";
 
 export default function Work() {
   const classes = useStyles();
+
   return (
     <section className={classes.root} id="work">
       <h2>Our Work</h2>

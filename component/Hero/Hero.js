@@ -22,6 +22,10 @@ export default function Hero() {
         animate={{ x: 0 }}
       />
 
+      <div className={classes.nav}>
+        <img src="/logo.png" />
+      </div>
+
       <div className={classes.overLay}>
         <motion.img
           src="/logo.png"

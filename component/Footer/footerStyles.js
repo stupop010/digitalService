@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: "#333F4F",
     textAlign: "center",
@@ -74,4 +74,4 @@ export const useStyles = makeStyles({
     padding: "0.7rem 0",
     background: "black",
   },
-});
+}));

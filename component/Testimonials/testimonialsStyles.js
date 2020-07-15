@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
   section: {
     background: "white",
     padding: "3rem 0",
@@ -79,4 +79,4 @@ export const useStyles = makeStyles({
       margin: 0,
     },
   },
-});
+}));

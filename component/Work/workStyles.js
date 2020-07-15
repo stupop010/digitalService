@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: "#414143",
     display: "flex",
@@ -22,5 +22,9 @@ export const useStyles = makeStyles({
       height: "200px",
       marginBottom: "1rem",
     },
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      justifyContent: "space-around",
+    },
   },
-});
+}));

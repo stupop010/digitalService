@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
@@ -32,6 +32,7 @@ export const useStyles = makeStyles({
       width: "1px",
       border: "1px solid black",
     },
+    // [theme.breakpoints.down("sm")]: {},
   },
   card: {
     width: "500px",
@@ -139,4 +140,4 @@ export const useStyles = makeStyles({
       opacity: 1,
     },
   },
-});
+}));
